@@ -1,0 +1,14 @@
+/* Created by Metrum AI for Dell */
+.dashboard-container {
+  display: flex;
+  overflow: hidden;
+  padding: 1rem;
+  gap: 1rem;
+  height: 100%;
+}
+
+.dashboard-inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

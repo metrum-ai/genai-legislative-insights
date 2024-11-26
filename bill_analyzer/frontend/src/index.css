@@ -1,0 +1,139 @@
+/* Created by Metrum AI for Dell */
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/Inter.ttf") format("truetype");
+  font-weight: 100 1000;
+  font-style: oblique 0deg 10deg;
+}
+
+@font-face {
+  font-family: "MaterialSymbolsRounded";
+  src: url("./assets/MaterialSymbolsRounded.ttf") format("truetype");
+  font-style: normal;
+}
+
+.material-symbols-rounded {
+  font-family: "MaterialSymbolsRounded";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+:root {
+  background-color: #0d0d0d;
+  background-size: cover;
+  font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  font-optical-sizing: auto;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: always;
+
+  --color-success-green: #37cc5c;
+  --color-warning-yellow: #f4bb5e;
+  --color-blue: #0672cb;
+  --color-magenta: #691d3f;
+  --color-black: #000000;
+  --color-highlight: #beafff;
+  --color-negative: #b30b37;
+  --color-base: #839db4;
+
+  --shadow-level-1: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 2px rgba(0, 0, 0, 0.24);
+  --shadow-level-2: 0px 3px 6px rgba(0, 0, 0, 0.16),
+    0px 2px 4px rgba(0, 0, 0, 0.23);
+  --shadow-level-3: 0px 5px 8px rgba(0, 0, 0, 0.19),
+    0px 3px 6px rgba(0, 0, 0, 0.23);
+  --shadow-level-4: 0px 10px 20px rgba(0, 0, 0, 0.2),
+    0px 6px 6px rgba(0, 0, 0, 0.22);
+  --shadow-level-5: 0px 14px 28px rgba(0, 0, 0, 0.25),
+    0px 10px 10px rgba(0, 0, 0, 0.22);
+  --shadow-level-6: 0px 19px 38px rgba(0, 0, 0, 0.3),
+    0px 15px 12px rgba(0, 0, 0, 0.22);
+  --shadow-level-7: 0px 24px 48px rgba(0, 0, 0, 0.35),
+    0px 20px 16px rgba(0, 0, 0, 0.22);
+
+  /* Scrollbar modifications */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #969696;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #3b3b3b;
+  }
+
+  ::-webkit-scrollbar-thumb:active {
+    background-color: #313131;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Inter";
+}
+
+body {
+  font-size: 16px;
+  height: 100vh;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-width: 300px;
+}
+
+.notification.success {
+  background-color: #4caf50;
+}
+
+.notification.failure {
+  background-color: #f44336;
+}
+
+.notification.neutral {
+  background-color: #00bcd4;
+}

@@ -1,0 +1,75 @@
+/* Created by Metrum AI for Dell */
+/* Profile.css */
+.user-profile {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin: auto;
+  padding: 0 1rem;
+
+}
+
+.user-panel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #1e1e1e;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+}
+
+.username {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.down-icon {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.user-panel:hover .down-icon {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  background-color: #1a1a1a;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  width: 200px;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: 16px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent #1a1a1a transparent;
+}
+
+.logout-div {
+  color: #ffffff;
+  font-size: 14px;
+  padding: 8px 14px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.logout-div:hover {
+  background-color: #333333;
+}

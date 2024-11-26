@@ -1,0 +1,81 @@
+/* Created by Metrum AI for Dell */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  max-height: 3.5rem;
+  height: 3.5rem;
+  padding: 0.5rem;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+.header-logo {
+  width: 260px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 360px;
+  height: auto;
+}
+
+
+/* .header-icon {
+  height: 100%;
+  width: min-content;
+} */
+
+/* .header-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  width: max-content;
+} */
+
+.header-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.header-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  margin: 0;
+}
+
+.header-subtext {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #888;
+  margin: 0;
+}
+
+.header-icon {
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.personalize-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .modal-container {
+    padding-top: 10px;
+  }
+  button {
+    cursor: pointer;
+  }
+  .modal-content {
+    height: auto !important;
+  }
+}
